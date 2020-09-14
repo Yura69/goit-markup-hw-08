@@ -8,6 +8,11 @@
   @media screen and (max-width: 767px) {
    text-align: center;
   }
+     @media screen and (min-width:768px) and (max-width:1199px){
+       display: flex;
+       justify-content: space-between;
+        flex-wrap:wrap; 
+    }
   @media screen and (min-width: 1200px) {
       display: flex;
       align-items: center;
@@ -19,6 +24,9 @@
   @media screen and (max-width: 767px) {
    margin-bottom: 60px;
   }
+     @media screen and (min-width:768px) and (max-width:1199px){
+     margin-bottom: 60px;
+    }
 }
 .footer-logo {
   display: inline-block;
@@ -68,17 +76,23 @@
 }
 .footer-form {
   @media screen and (max-width: 767px){
-    
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
   }
+     @media screen and (min-width:768px) and (max-width:1199px){
+     margin-left: auto;
+     margin-right: auto;
+     text-align: center;
+    }
   @media screen and (min-width: 1200px){
       display: flex;
       align-items: flex-end;
-
   }
 }
 .label-footer > input[type="email"]{
   display: block;
-  width: 100%;
+  width: 358px;
   padding: 15px;
   font-weight: 400;
   font-size: 16px;
@@ -90,8 +104,12 @@
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
    @media screen and (max-width: 767px){
-    margin-bottom: 20px;
+    margin-bottom: 20px; 
+     width: 100%;
   }
+     @media screen and (min-width:768px) and (max-width:1199px){
+    margin-bottom: 20px;
+    }
 }
 .form-title{
   margin-top: 0;
@@ -108,7 +126,7 @@
   width: 200px;
   height: 50px;
   padding: 10px 29px;
-    // @extend %flex;
+    @extend %flex;
   text-align: center;
   letter-spacing: 0.06em;
   font-weight: 700;
@@ -128,6 +146,10 @@
         background-image: url(../images/send1.svg);
         background-size: contain;
         background-repeat: no-repeat;
+    }
+    @media screen and (max-width:1199px) {
+      margin-left: auto;
+      margin-right: auto;
     }
 }
 

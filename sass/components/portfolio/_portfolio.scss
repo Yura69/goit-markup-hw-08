@@ -1,9 +1,27 @@
 .btn-list {
-  display: flex;
+  @media screen and (max-width:767px) {
+    display: flex ;
+    flex-wrap: wrap;
+    .item:not(:last-child) {
+    margin-right: 8px;
+    margin-bottom: 15PX;
+    }
+  }
+     @media screen and (min-width:768px) and (max-width:1199px){
+      display: flex;
   justify-content: center;
     .item:not(:last-child) {
     margin-right: 8px;
     }
+    }
+  @media screen and (min-width: 1200px){
+      display: flex;
+  justify-content: center;
+    .item:not(:last-child) {
+    margin-right: 8px;
+    }
+  }
+
 }
 
 .port-exemp .item img{
@@ -56,21 +74,56 @@
   text-decoration: none;
 }
 .port-exemp {
-  margin-top: 56px;
   display: flex;
   flex-wrap: wrap;
     .item a > img {
       margin-bottom: 20px;
     }
+    @media screen and (max-width:767px) {
+      justify-content: center;
+        margin-top: 40px;
+         .item a > img {
+      max-width: 450px;
+    }
+    }
+         @media screen and (min-width:768px) and (max-width:1199px){
+          margin: -15px;
+          padding-top: 30px;
+          .item a > img {
+            width: 100%;
+    }
+    }
+
+        @media screen and (min-width:1200px) {
+        margin-top: 56px;
+      .item a > img {
+          width: 370px;
+          height: 294px;
+    }
+
+    }
+   
 }
 .port-exemp .item {
-  width: 370px;
   border: 1px solid #eeeeee;
+  @media screen and (max-width:767px) {
+    max-width: 450px;
+     margin-bottom: 30px;
+  }
+       @media screen and (min-width:768px) and (max-width:1199px){
+             width: 354px;
+             margin: 15px;
+    }
+
+
+    @media screen and (min-width:1200px){
+        width: 370px;
     &:not(:nth-child(3n)) {
         margin-right: 30px;
     }
     &:not(:nth-last-child(-n + 3)) {
         margin-bottom: 30px;
+    }
     }
 
 }

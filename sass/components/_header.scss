@@ -10,22 +10,61 @@
   color: $main-text-color;
 }
 .head-container {
-  position: absolute;
+  &.is-open{
+      display: block;
+    }
   @media screen and (max-width: 767px) {
     display: none;
+    position: absolute;
+    left: 0;
+    z-index: 999;
+    outline: 1px solid teal;
+    background-color: $white;
+    width: 100%;
+    &.is-open{
+      display: block;
+    }
   }
+    @media screen and (min-width:768px) {
+            display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
   @media screen and (min-width: 1200px) {
       display: flex;
       align-items: center;
   }
 }
+.nav-container {
+  @media screen and (max-width: 767px){
+    text-align: center;
+  }
+      @media screen and (min-width:768px) {
+            display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      align-items: center;
+     
+  }
+
+}
 .header-page {
-  position: relative;
+ 
+    @media screen and (max-width:767px) {
+             position: relative;
+             width: 100%;
+    }
+
   @media screen and (min-width: 1200px) {
       display: flex;
       align-items: center;
      
   }
+
 }
 .mobail-menu{
   @media screen and (max-width: 767px){
@@ -34,15 +73,21 @@
     justify-content: space-between; 
     height: 60px;
   }
+      @media screen and (min-width:768px) {
+            display: flex;
+              }
+
 }
-.menu-button {
+
+ .menu-button {
+  @media screen and (max-width: 767px){
   display: inline-block;
   margin: 0;
   padding: 0;
   border: none;
   background-color:  transparent;
   color: $title-text-color;
-  .icon-cross {
+   .icon-cross {
     display: none;
     fill: currentColor;
   }
@@ -53,26 +98,38 @@
     display: none;
   }
    .icon-menu {
+     display: block;
     fill: currentColor;
   }
+  &:active,
+  &:hover{
+    color: $accent-color;
+  }
+  }
+  @media screen  and (min-width:768px) {
+    display: none;
+  }
 }
+ 
 .header-page.portfolio{
   border-bottom: 1px solid #ECECEC;
 }
-.nav-menu {
-  @media screen and (min-width: 1200px) {
-      display: flex;
-  }
-  
-}
 .site-nav {
-  margin-left: 85px;
+      @media screen and (min-width:768px) {
+        display: flex;
+        justify-content: center;
+.item:not(:last-child) {
+      margin-right: 50px;
+    }
+   }
   @media screen and (min-width: 1200px) {
       display: flex;
-  }
+      margin-left: 85px;
     .item:not(:last-child) {
       margin-right: 50px;
     }
+
+  }
 }
 .link-icon {
   margin-right: 10px;
@@ -82,14 +139,26 @@
 }
 
 .contacts {
-  @media screen and (min-width: 1200px) {
-       margin-left: auto;
-       display: flex;
+  @media screen and (max-width:767px){
     .item + .item {
+    margin-top: 16px;
+      margin-bottom: 60px;
+    }
+  }
+  @media screen and (min-width:768px) {
+    display: block;
+    margin-left: 84px;
+  }
+  
+   @media screen and (min-width: 1200px) {
+       display: flex; 
+        margin-right: auto;  
+        margin-left: 300px;
+  .item + .item {
       margin-left: 30px;
     }
   }
- 
+
 }
 .logo {
   display: block;
@@ -105,7 +174,6 @@
   }
 }
 .link-nav {
-  
     @media screen and (min-width: 1200px) {
       display: flex;
       align-items: center;

@@ -13,32 +13,42 @@
 
 <body>
   <header class="header-page portfolio">
-    <div class="container head-container">
-      <a href="index.html" class="logo">
-        <h2 class="web-st mar-pad"><span class="Web-bl">Web</span> Studio</h2>
-      </a>
-      <nav class="nav-menu">
-        <ul class="mar-pad site-nav">
-          <li class="item"><a href="index.html" class="hd-nav ">Студия</a></li>
-          <li class="item"><a href="portfolio.html" class="hd-nav active-link">Портфолио</a></li>
-          <li class="item"><a href="#" class="hd-nav">Контакты</a></li>
+    <div class="container nav-container">
+      <div class="mobail-menu">
+        <a href="index.html" class="logo">
+          <h2 class="web-st mar-pad"><span class="Web-bl">Web</span> Studio</h2>
+        </a>
+        <button type="button" class="menu-button is-open" aria-expanded="false" data-menu-button>
+          <svg width="30px" height="30px" aria-label="Переключатель мобильного меню">
+            <use class="icon-cross" href="./images/symbol-defs.svg#icon-menu"></use>
+            <use class="icon-menu" href="./images/symbol-defs.svg#icon-cross"></use>
+          </svg>
+        </button></div>
+      <div class="head-container" data-menu>
+        <nav class="nav-menu">
+
+          <ul class="mar-pad site-nav">
+            <li class="item"><a href="index.html" class="hd-nav">Студия</a></li>
+            <li class="item"><a href="portfolio.html" class="hd-nav active-link">Портфолио</a></li>
+            <li class="item"><a href="#" class="hd-nav">Контакты</a></li>
+          </ul>
+        </nav>
+        <ul class="mar-pad contacts">
+          <li class="item">
+            <a href="milto:info@devstudio.com" class="link-nav">
+              <svg class="link-icon">
+                <use href="./images/symbol-defs.svg#icon-envelope-hover" width="15" height="15"></use>
+              </svg> info@devstudio.com</a>
+          </li>
+          <li class="item">
+            <a href="tel:+380961111111" class="link-nav">
+              <svg class="link-icon">
+                <use href="./images/symbol-defs.svg#icon-smartphone" width="15" height="15"></use>
+              </svg>+38 096 111 11 11
+            </a>
+          </li>
         </ul>
-      </nav>
-      <ul class="mar-pad contacts">
-        <li class="item">
-          <a href="milto:info@devstudio.com" class="link-nav">
-            <svg class="link-icon">
-              <use href="./images/symbol-defs.svg#icon-envelope-hover" width="15" height="15"></use>
-            </svg> info@devstudio.com</a>
-        </li>
-        <li class="item">
-          <a href="tel:+380961111111" class="link-nav">
-            <svg class="link-icon">
-              <use href="./images/symbol-defs.svg#icon-smartphone" width="15" height="15"></use>
-            </svg>+38 096 111 11 11
-          </a>
-        </li>
-      </ul>
+      </div>
     </div>
   </header>
   <main>
@@ -57,8 +67,7 @@
         <ul class="port-exemp mar-pad">
           <li class="item">
             <a href="#" class="none-decor decor-link">
-              <div class="img-txt"><img src="./images/portfolio-img/img1.jpg" width="370" height="294"
-                  alt="Фото - Технокряк" />
+              <div class="img-txt"><img src="./images/portfolio-img/img1.jpg" alt="Фото - Технокряк" />
                 <p class="jb-descrition mar-pad">
                   Технокряк это современная площадка распространения коронавируса.
                   Компании используют эту платформу для цифрового шпионажа и атак
@@ -72,7 +81,7 @@
           </li>
           <li class="item">
             <a href="#" class="none-decor decor-link">
-              <div class="img-txt"><img src="./images/portfolio-img/img2.jpg" width="370" height="294"
+              <div class="img-txt"><img src="./images/portfolio-img/img2.jpg"
                   alt="Фото - Постер New Orlean vs Golden Star" />
                 <p class="jb-descrition mar-pad">
                   Технокряк это современная площадка распространения коронавируса.
@@ -87,8 +96,7 @@
           </li>
           <li class="item">
             <a href="#" class="none-decor decor-link">
-              <div class="img-txt"><img src="./images/portfolio-img/img3.jpg" width="370 height=" 294"
-                  alt="Фото постера - Ресторан Seafood" />
+              <div class="img-txt"><img src="./images/portfolio-img/img3.jpg" alt="Фото постера - Ресторан Seafood" />
                 <p class="jb-descrition mar-pad">
                   Технокряк это современная площадка распространения коронавируса.
                   Компании используют эту платформу для цифрового шпионажа и атак
@@ -102,8 +110,7 @@
           </li>
           <li class="item">
             <a href="#" class="none-decor decor-link">
-              <div class="img-txt"><img src="./images/portfolio-img/img4.jpg" width="370" height="294"
-                  alt="Фото постера - Проект Prime" />
+              <div class="img-txt"><img src="./images/portfolio-img/img4.jpg" alt="Фото постера - Проект Prime" />
                 <p class="jb-descrition mar-pad">
                   Технокряк это современная площадка распространения коронавируса.
                   Компании используют эту платформу для цифрового шпионажа и атак
@@ -117,8 +124,7 @@
           </li>
           <li class="item">
             <a href="#" class="none-decor decor-link">
-              <div class="img-txt"><img src="./images/portfolio-img/img5.jpg" width="370" height="294"
-                  alt="Фото постера - Проект Boxes" />
+              <div class="img-txt"><img src="./images/portfolio-img/img5.jpg" alt="Фото постера - Проект Boxes" />
                 <p class="jb-descrition mar-pad">
                   Технокряк это современная площадка распространения коронавируса.
                   Компании используют эту платформу для цифрового шпионажа и атак
@@ -132,7 +138,7 @@
           </li>
           <li class="item">
             <a href="#" class="none-decor decor-link">
-              <div class="img-txt"><img src="./images/portfolio-img/img6.jpg" width="370" height="294"
+              <div class="img-txt"><img src="./images/portfolio-img/img6.jpg"
                   alt="Фото постера Веб-сайта - Inspiration has no Borders" />
                 <p class="jb-descrition mar-pad">
                   Технокряк это современная площадка распространения коронавируса.
@@ -147,7 +153,7 @@
           </li>
           <li class="item">
             <a href="#" class="none-decor decor-link">
-              <div class="img-txt"><img src="./images/portfolio-img/img7.jpg" width="370" height="294"
+              <div class="img-txt"><img src="./images/portfolio-img/img7.jpg"
                   alt="Фото постера - Издание Limited Edition " />
                 <p class="jb-descrition mar-pad">
                   Технокряк это современная площадка распространения коронавируса.
@@ -162,8 +168,7 @@
           </li>
           <li class="item">
             <a href="#" class="none-decor decor-link">
-              <div class="img-txt"><img src="./images/portfolio-img/img8.jpg" width="370" height="294"
-                  alt="Фото постера - Проект LAB" />
+              <div class="img-txt"><img src="./images/portfolio-img/img8.jpg" alt="Фото постера - Проект LAB" />
                 <p class="jb-descrition mar-pad">
                   Технокряк это современная площадка распространения коронавируса.
                   Компании используют эту платформу для цифрового шпионажа и атак
@@ -177,7 +182,7 @@
           </li>
           <li class="item">
             <a href="#" class="none-decor decor-link">
-              <div class="img-txt"><img src="./images/portfolio-img/img9.jpg" width="370" height="294"
+              <div class="img-txt"><img src="./images/portfolio-img/img9.jpg"
                   alt="Фото постера Приложения - Growing Business" />
                 <p class="jb-descrition mar-pad">
                   Технокряк это современная площадка распространения коронавируса.
@@ -248,6 +253,8 @@
       </form>
     </div>
   </footer>
+  <script src="./js/menu.js"></script>
+
 </body>
 
 </html>

@@ -10,46 +10,48 @@
 
 <body>
 
-  <header class="header-page container">
-    <div class="mobail-menu">
-      <a href="index.html" class="logo">
-        <h2 class="web-st mar-pad"><span class="Web-bl">Web</span> Studio</h2>
-      </a>
-      <button type="button" class="menu-button is-open" aria-expanded="false" data-menu-buuton>
-        <svg width="30px" height="30px" aria-label="Переключатель мобильного меню">
-          <use class="icon-cross" href="./images/symbol-defs.svg#icon-cross"></use>
-          <use class="icon-menu" href="./images/symbol-defs.svg#icon-menu"></use>
-        </svg>
-      </button></div>
-    <div class="head-container">
-      <nav class="nav-menu">
+  <header class="header-page">
+    <div class="container nav-container">
+      <div class="mobail-menu">
+        <a href="index.html" class="logo">
+          <h2 class="web-st mar-pad"><span class="Web-bl">Web</span> Studio</h2>
+        </a>
+        <button type="button" class="menu-button is-open" aria-expanded="false" data-menu-button>
+          <svg width="30px" height="30px" aria-label="Переключатель мобильного меню">
+            <use class="icon-cross" href="./images/symbol-defs.svg#icon-menu"></use>
+            <use class="icon-menu" href="./images/symbol-defs.svg#icon-cross"></use>
+          </svg>
+        </button></div>
+      <div class="head-container" data-menu>
+        <nav class="nav-menu">
 
-        <ul class="mar-pad site-nav">
-          <li class="item"><a href="index.html" class="hd-nav active-link">Студия</a></li>
-          <li class="item"><a href="portfolio.html" class="hd-nav">Портфолио</a></li>
-          <li class="item"><a href="#" class="hd-nav">Контакты</a></li>
+          <ul class="mar-pad site-nav">
+            <li class="item"><a href="index.html" class="hd-nav active-link">Студия</a></li>
+            <li class="item"><a href="portfolio.html" class="hd-nav">Портфолио</a></li>
+            <li class="item"><a href="#" class="hd-nav">Контакты</a></li>
+          </ul>
+        </nav>
+        <ul class="mar-pad contacts">
+          <li class="item">
+            <a href="milto:info@devstudio.com" class="link-nav">
+              <svg class="link-icon">
+                <use href="./images/symbol-defs.svg#icon-envelope-hover" width="15" height="15"></use>
+              </svg> info@devstudio.com</a>
+          </li>
+          <li class="item">
+            <a href="tel:+380961111111" class="link-nav">
+              <svg class="link-icon">
+                <use href="./images/symbol-defs.svg#icon-smartphone" width="15" height="15"></use>
+              </svg>+38 096 111 11 11
+            </a>
+          </li>
         </ul>
-      </nav>
-      <ul class="mar-pad contacts">
-        <li class="item">
-          <a href="milto:info@devstudio.com" class="link-nav">
-            <svg class="link-icon">
-              <use href="./images/symbol-defs.svg#icon-envelope-hover" width="15" height="15"></use>
-            </svg> info@devstudio.com</a>
-        </li>
-        <li class="item">
-          <a href="tel:+380961111111" class="link-nav">
-            <svg class="link-icon">
-              <use href="./images/symbol-defs.svg#icon-smartphone" width="15" height="15"></use>
-            </svg>+38 096 111 11 11
-          </a>
-        </li>
-      </ul>
+      </div>
     </div>
   </header>
   <main>
     <section class="main-services section">
-      <div class="container">
+      <div class="container services-container">
         <h1 class="title mar-pad">Эффективные решения для вашего бизнеса</h1>
         <button data-modal-open class="dwl-bt ">Заказать услугу</button>
       </div>
@@ -273,7 +275,8 @@
   </main>
   <footer class="footer">
     <div class="footer-container container">
-      <div class="footer-box"><a href="index.html" class="footer-logo logo">
+      <div class="footer-box">
+        <a href="index.html" class="footer-logo logo">
           <h2 class="web-st white mar-pad"><span class="Web-bl">Web </span>Studio</h2>
         </a>
         <address>
