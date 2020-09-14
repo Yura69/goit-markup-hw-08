@@ -75,6 +75,7 @@
 }
 .port-exemp {
   display: flex;
+  
   flex-wrap: wrap;
     .item a > img {
       margin-bottom: 20px;
@@ -96,6 +97,7 @@
 
         @media screen and (min-width:1200px) {
         margin-top: 56px;
+        justify-content: center;
       .item a > img {
           width: 370px;
           height: 294px;
