@@ -1,0 +1,50 @@
+.clients-list {
+  @media screen and (max-width: 767px) {
+      display: flex;
+      justify-content: center;
+        flex-wrap:wrap; 
+  height: 360px;
+  margin: -15px;
+  }
+  // display: flex;
+  // flex-direction: column;
+  // flex-wrap:wrap; 
+  .item:not(:last-child) {
+    // margin-right: 30px;
+  }
+}
+.clients-container {
+    @media screen and(min-width: 480px) {
+      text-align: center;
+    }
+}
+.logo-clien-link {
+  display: flex;
+  // width: 170px;
+  // height: 90px;
+  color: $border-color;
+  border: solid 1px $border-color;
+  border-radius: 4px;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  @include transition(color);
+    &:focus,
+    &:hover {
+      color: $accent-color;
+      border-color: $accent-color;
+    }
+    @media screen and (max-width:767px){
+        width: 210px;
+        height: 90px;
+        margin:15px;
+    }
+        @media screen and (max-width:480px){
+        width: 100%;
+       margin:15px;
+    }
+
+}
+.link-icon-client {
+  fill: currentColor;
+}

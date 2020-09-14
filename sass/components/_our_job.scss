@@ -1,0 +1,44 @@
+%font_latter{
+  font-weight: 700; 
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+.dspl-none{
+  @media screen and (max-width: 1199px){
+      display: none;
+  }
+}
+.our-job {
+  display: flex;
+   .item:not(:last-child) {
+    margin-right: 30px;
+  }
+   .item img{
+    display: block;
+  }
+   .item {
+    position: relative;
+  }
+}
+.heading {
+  margin-bottom: 50px;
+    @extend %font_latter;
+  font-size: 36px;
+  line-height: 1.7;
+  color: $title-text-color;
+}
+.wr-tt {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: inline-block;
+  width: 370px;
+    @extend %font_latter;
+  font-size: 14px;
+  line-height: 1.15;
+  text-transform: uppercase;
+  color: $white;
+  background-color: rgba(47, 48, 58, 0.8);
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
